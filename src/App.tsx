@@ -1,7 +1,11 @@
-import { Navbar } from 'components'
+import { Button } from 'components'
 
 function App() {
-  return <Navbar />
+  return (
+    <Button variant="outlined" className="px-5 py-[0.6rem]">
+      Criar conta
+    </Button>
+  )
 }
 
 export default App
