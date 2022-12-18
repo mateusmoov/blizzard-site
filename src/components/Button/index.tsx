@@ -7,8 +7,9 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
 
 const Button = ({ children, variant, className, icon, ...props }: ButtonProps) => {
   const variants = {
-    filled: 'rounded bg-primary ' + className,
-    outlined: 'rounded border-2 border-solid border-white bg-transparent ' + className
+    filled: 'flex items-center rounded bg-primary ' + className,
+    outlined:
+      'flex items-center rounded border-2 border-solid border-white bg-transparent ' + className
   }
   return (
     <button {...props} className={variants[variant]}>
