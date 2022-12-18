@@ -3,7 +3,7 @@ import { ChevronDown, BlizzardLogo, UserIcon } from 'icons'
 
 const Navbar = () => {
   return (
-    <header className=" bg-black">
+    <header>
       <div className="mx-auto flex max-w-screen-xl justify-between py-7">
         <div className="flex gap-x-28">
           <BlizzardLogo />

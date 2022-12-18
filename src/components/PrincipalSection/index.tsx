@@ -2,9 +2,11 @@ import { Navbar } from 'components'
 
 const PrincipalSection = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <>
+      <div className="min-h-[738px] bg-banner1 mix-blend-multiply ">
+        <Navbar />
+      </div>
+    </>
   )
 }
 

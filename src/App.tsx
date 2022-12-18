@@ -1,7 +1,7 @@
-import { Navbar } from 'components'
+import { PrincipalSection } from 'components'
 
 function App() {
-  return <Navbar />
+  return <PrincipalSection />
 }
 
 export default App
