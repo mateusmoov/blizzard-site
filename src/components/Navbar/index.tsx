@@ -1,19 +1,18 @@
-import BlizzardLogo from 'assets/logos/blizzard-logo.svg'
-import ArrowDown from 'assets/arrow-down.svg'
+import { ChevronDown, BlizzardLogo } from 'logos'
 
 const Navbar = () => {
   return (
     <div className="bg-black">
       <div>
-        <img src={BlizzardLogo} alt="logo-blizzard" />
+        <BlizzardLogo />
         <div className="flex text-white-primary">
           <div>
             <a href="http://www.pudim.com.br">
-              Esporte <img src={ArrowDown} alt="arrow-down" />
+              <ChevronDown />
             </a>
           </div>
           <a href="http://www.pudim.com.br">
-            Jogos <img src={ArrowDown} alt="arrow-down" />
+            <ChevronDown />
           </a>
           <a href="http://www.pudim.com.br">Loja</a>
           <a href="http://www.pudim.com.br">Notícias</a>
