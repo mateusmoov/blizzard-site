@@ -3,12 +3,12 @@ import { ChevronDown, BlizzardLogo, UserIcon } from 'icons'
 
 const Navbar = () => {
   return (
-    <header className="border-b-2 border-white-primary border-opacity-5">
+    <header className="border-b-2 border-white border-opacity-5">
       <div className="mx-auto flex max-w-screen-xl justify-between py-7">
         <div className="flex gap-x-28">
           <BlizzardLogo />
           <nav className="flex items-center">
-            <ul className="flex gap-x-8 space-x-3 font-poppins font-medium text-white-primary">
+            <ul className="flex gap-x-8 space-x-3 font-poppins font-medium text-white">
               <li>
                 <a href="http://www.pudim.com.br" className="space-x-3">
                   <span>Jogos</span>
