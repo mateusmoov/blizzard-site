@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-x-4">
           <Button variant="outlined" className="h-10 gap-x-1.5 px-5 leading-[1.3rem]">
-            Criar Conta
+            Criar conta
           </Button>
           <Button
             variant="filled"
