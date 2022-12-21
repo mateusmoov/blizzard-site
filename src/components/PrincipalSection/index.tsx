@@ -30,19 +30,17 @@ const PrincipalSection = () => {
             <img src={StarCraft2} alt="Star Craft 2" width="48" />
           </li>
         </ul>
-        <div className="ml-44 mr-64 w-full max-w-[562px] font-poppins font-medium	text-white">
+        <div className="ml-44 mr-64 w-full max-w-[562px] font-poppins	text-white">
           <h1 className="mb-4 text-6xl font-bold leading-[71px]">
             Retorne à escuridão com o game Diablo IV
           </h1>
-          <p className="mb-8 text-lg font-normal">
-            O retorno de Lilith traz uma era de escuridão e sofrimento
-          </p>
-          <button className="rounded	bg-primary px-8 py-3.5">Jogue Agora</button>
+          <p className="mb-8 text-lg">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+          <button className="rounded	bg-primary px-8 py-3.5 font-medium">Jogue Agora</button>
         </div>
         <div className="flex flex-col content-between	">
           <img src={Diablo4XL} alt="Diablo 4" className="mb-28" />
           <div>
-            <p className="font-poppins text-lg font-semibold text-white">ASSISTA O TRAILER</p>
+            <h3 className="font-poppins text-lg font-semibold text-white">ASSISTA O TRAILER</h3>
             <img src={ThumbDiablo4} alt="Thumb Video Diablo 4" />
           </div>
         </div>
