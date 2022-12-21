@@ -6,7 +6,7 @@ import StarCraft2 from '~/../../public/assets/logos/star-craft-2.png'
 import Diablo4XL from '~/../../public/assets/logos/diablo-4xl.png'
 import ThumbDiablo4 from '~/../../public/assets/banner/thumb-diablo4.png'
 
-import { Navbar } from 'components'
+import { Navbar, Button } from 'components'
 
 const PrincipalSection = () => {
   return (
@@ -35,7 +35,7 @@ const PrincipalSection = () => {
             Retorne à escuridão com o game Diablo IV
           </h1>
           <p className="mb-8 text-lg">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
-          <button className="rounded	bg-primary px-8 py-3.5 font-medium">Jogue Agora</button>
+          <Button variant="filled" className="px-8 py-3.5 font-medium" />
         </div>
         <div className="flex flex-col content-between	">
           <img src={Diablo4XL} alt="Diablo 4" className="mb-28" />
