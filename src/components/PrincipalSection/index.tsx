@@ -1,18 +1,18 @@
-import Diablo4 from '/assets/logos/diablo-4.png'
-import HearthStone from '/assets/logos/hearthstone.png'
-import WoW from '/assets/logos/world-of-warcraft.png'
-import Diablo1 from '/assets/logos/diablo-1.png'
-import StarCraft2 from '/assets/logos/star-craft-2.png'
-import Diablo4XL from '/assets/logos/diablo-4xl.png'
-import ThumbDiablo4 from '/assets/banner/thumb-diablo4.png'
+import Diablo4 from '/assets/banner-hero/icons/game-1.png'
+import HearthStone from '/assets/banner-hero/icons/game-2.png'
+import WoW from '/assets/banner-hero/icons/game-3.png'
+import Diablo1 from '/assets/banner-hero/icons/game-4.png'
+import StarCraft2 from '/assets/banner-hero/icons/game-5.png'
+import Diablo4XL from '/assets/banner-hero/games/diablo-logo.png'
+import ThumbDiablo4 from '/assets/banner-hero/games/diablo-animation-cover.png'
 
 import { Navbar, Button } from 'components'
 
 const PrincipalSection = () => {
   return (
-    <div className="bg-1">
+    <div className="bg-1 bg-cover">
       <Navbar />
-      <div className='grid grid-cols-[221px_562px_497px] max-w-screen-xl mx-auto h-[738px] items-center'>
+      <div className='grid grid-cols-hero max-w-screen-xl mx-auto h-[738px] items-center'>
         <div className=" font-poppins text-white col-span-1 order-2 self-end">
           <h1 className="mb-4 text-6xl font-bold leading-[71px]">
             Retorne à escuridão com o game Diablo IV
