@@ -1,7 +1,13 @@
-import { Section } from 'components'
+import { useQuery } from '@tanstack/react-query'
 import { BattleNetLogo, NintendoSwitchLogo, XboxLogo, PlaystationLogo, AllGamesIcon } from 'icons'
+import { Section } from 'components'
+import getGames from 'services/api'
 
 const GameSection = () => {
+  const query = useQuery({ queryKey: ['games'], queryFn: getGames })
+
+  console.log(query.data)
+
   return (
     <Section className="bg-black">
       <div className="flex font-poppins ">
