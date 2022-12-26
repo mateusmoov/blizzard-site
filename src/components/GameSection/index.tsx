@@ -1,7 +1,6 @@
 const GameSection = () => {
   return (
-    <div>
-      <h1>Game Section</h1>
+    <div className="max-w-screen-xl bg-black">
     </div>
   )
 }

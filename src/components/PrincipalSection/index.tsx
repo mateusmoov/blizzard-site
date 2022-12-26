@@ -12,7 +12,7 @@ const PrincipalSection = () => {
   return (
     <div className="bg-1 bg-cover">
       <Navbar />
-      <div className='grid grid-cols-hero max-w-screen-xl mx-auto h-[738px] items-center'>
+      <div className='grid grid-cols-hero container mx-auto h-[738px] items-center'>
         <div className=" font-poppins text-white col-span-1 order-2 self-end">
           <h1 className="mb-4 text-6xl font-bold leading-[71px]">
             Retorne à escuridão com o game Diablo IV
