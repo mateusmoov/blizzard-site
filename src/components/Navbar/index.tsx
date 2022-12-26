@@ -1,7 +1,7 @@
-import Button from 'components/Button'
+import { Button } from 'components'
 import { ChevronDown, BlizzardLogo, UserIcon } from 'icons'
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <header className="border-b-2 border-white border-opacity-5">
       <div className="mx-auto flex max-w-screen-xl justify-between py-7">
@@ -49,5 +49,3 @@ const Navbar = () => {
     </header>
   )
 }
-
-export default Navbar

@@ -5,7 +5,7 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
   icon?: React.ReactNode
 }
 
-const Button = ({ children, variant, className, icon, ...props }: ButtonProps) => {
+export const Button = ({ children, variant, className, icon, ...props }: ButtonProps) => {
   const variants = {
     filled: 'flex items-center rounded bg-primary ' + className,
     outlined:
@@ -18,5 +18,3 @@ const Button = ({ children, variant, className, icon, ...props }: ButtonProps) =
     </button>
   )
 }
-
-export default Button

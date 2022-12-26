@@ -8,34 +8,33 @@ import ThumbDiablo4 from '/assets/banner-hero/games/diablo-animation-cover.png'
 
 import { Navbar, Button, Section } from 'components'
 
-const PrincipalSection = () => {
+export const PrincipalSection = () => {
   return (
     <div className="bg-1 bg-cover">
       <Navbar />
 
-      <Section className='grid grid-cols-hero h-[738px]'>
-        
-        <div className=" font-poppins text-white col-span-1 order-2 self-end">
+      <Section className="grid h-[738px] grid-cols-hero">
+        <div className=" order-2 col-span-1 self-end font-poppins text-white">
           <h1 className="mb-4 text-6xl font-bold leading-[71px]">
             Retorne à escuridão com o game Diablo IV
           </h1>
           <p className="mb-8 text-lg">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
-          </div>
-          
-          <div className='order-4 self-start'>
-            <Button variant="filled" className="px-8 py-3.5 font-medium">
-              Jogue agora
-            </Button>
-          </div>
+        </div>
 
-          <div className='order-5 self-start flex justify-center flex-col items-end'>
-            <h3 className="font-poppins text-lg font-semibold text-white mb-4">ASSISTA O TRAILER</h3>
-            <div>
+        <div className="order-4 self-start">
+          <Button variant="filled" className="px-8 py-3.5 font-medium">
+            Jogue agora
+          </Button>
+        </div>
+
+        <div className="order-5 flex flex-col items-end justify-center self-start">
+          <h3 className="mb-4 font-poppins text-lg font-semibold text-white">ASSISTA O TRAILER</h3>
+          <div>
             <img src={ThumbDiablo4} alt="Thumb Video Diablo 4" />
-            </div>
           </div>
+        </div>
 
-        <ul className="flex flex-col gap-y-5 row-span-2 order-1">
+        <ul className="order-1 row-span-2 flex flex-col gap-y-5">
           <li tabIndex={0}>
             <img src={Diablo4} alt="Diablo 4" width="48" />
           </li>
@@ -53,15 +52,12 @@ const PrincipalSection = () => {
           </li>
         </ul>
 
-        <div className='order-3 ml-auto'>
+        <div className="order-3 ml-auto">
           <div>
-          <img src={Diablo4XL} alt="Diablo 4"  />
+            <img src={Diablo4XL} alt="Diablo 4" />
           </div>
-        </div> 
-
+        </div>
       </Section>
-      </div>   
+    </div>
   )
 }
-
-export default PrincipalSection

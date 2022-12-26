@@ -3,7 +3,7 @@ import { BattleNetLogo, NintendoSwitchLogo, XboxLogo, PlaystationLogo, AllGamesI
 import { Section } from 'components'
 import getGames from 'services/api'
 
-const GameSection = () => {
+export const GameSection = () => {
   const query = useQuery({ queryKey: ['games'], queryFn: getGames })
 
   console.log(query.data)
@@ -33,5 +33,3 @@ const GameSection = () => {
     </Section>
   )
 }
-
-export default GameSection
