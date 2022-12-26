@@ -6,13 +6,15 @@ import StarCraft2 from '/assets/banner-hero/icons/game-5.png'
 import Diablo4XL from '/assets/banner-hero/games/diablo-logo.png'
 import ThumbDiablo4 from '/assets/banner-hero/games/diablo-animation-cover.png'
 
-import { Navbar, Button } from 'components'
+import { Navbar, Button, Section } from 'components'
 
 const PrincipalSection = () => {
   return (
     <div className="bg-1 bg-cover">
       <Navbar />
-      <div className='grid grid-cols-hero container mx-auto h-[738px] items-center'>
+
+      <Section className='grid grid-cols-hero h-[738px]'>
+        
         <div className=" font-poppins text-white col-span-1 order-2 self-end">
           <h1 className="mb-4 text-6xl font-bold leading-[71px]">
             Retorne à escuridão com o game Diablo IV
@@ -57,8 +59,8 @@ const PrincipalSection = () => {
           </div>
         </div> 
 
+      </Section>
       </div>   
-      </div>
   )
 }
 
