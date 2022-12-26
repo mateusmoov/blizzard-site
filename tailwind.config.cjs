@@ -18,7 +18,8 @@ module.exports = {
         'white': '#FFFFFF',
         'platinum': {
           100: '#E5E5E5',
-          200: '#828792',
+          200: '#8F9199',
+          300: '#828792',
         },
       },
       backgroundImage: {
