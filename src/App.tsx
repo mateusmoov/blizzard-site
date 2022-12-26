@@ -1,7 +1,12 @@
-import { PrincipalSection } from 'components'
+import { PrincipalSection, GameSection } from 'components'
 
 function App() {
-  return <PrincipalSection />
+  return (
+    <>
+      <PrincipalSection />
+      <GameSection />
+    </>
+  )
 }
 
 export default App
