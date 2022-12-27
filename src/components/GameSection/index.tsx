@@ -1,10 +1,18 @@
 import { useQuery } from '@tanstack/react-query'
 import { BattleNetLogo, NintendoSwitchLogo, XboxLogo, PlaystationLogo, AllGamesIcon } from 'icons'
-import { Section } from 'components'
+import { Section, GameCard } from 'components'
 import getGames from 'services/api'
 
+interface GameType {
+  key: number
+  name: string
+  category: string
+  image: string
+  logo: string
+}
+
 export const GameSection = () => {
-  const query = useQuery({ queryKey: ['games'], queryFn: getGames })
+  const query = useQuery<GameType[]>({ queryKey: ['games'], queryFn: getGames })
 
   console.log(query.data)
 
@@ -29,6 +37,11 @@ export const GameSection = () => {
           </div>
           <span className="font-bold text-primary">Ver todos jogos</span>
         </div>
+      </div>
+      <div>
+        {query.data?.map((game, key: number) => (
+          <GameCard key={key} thumbnailURL={game.image} />
+        ))}
       </div>
     </Section>
   )
