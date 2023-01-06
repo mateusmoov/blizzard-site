@@ -25,21 +25,19 @@ export const GameSection = () => {
 
   return (
     <Section className="bg-black">
-      <div className="flex font-poppins">
-        <div className="my-20 flex">
-          <div className="flex items-end gap-x-40">
-            <span className="font-semibold text-platinum-200">GAMES</span>
-            <div className="w-44">
-              <h1 className="text-2xl font-bold text-white">Jogos exclusivos</h1>
-            </div>
-            <div className="flex gap-6">
-              <BattleNetLogo />
-              <NintendoSwitchLogo />
-              <XboxLogo />
-              <PlaystationLogo />
-            </div>
+      <div className="py-20 font-poppins">
+        <div className="flex items-end gap-x-40">
+          <span className="font-semibold text-platinum-200">GAMES</span>
+          <div className="w-44">
+            <h1 className="text-2xl font-bold text-white">Jogos exclusivos</h1>
           </div>
-          <div className="flex gap-2.5 self-end">
+          <div className="flex gap-6">
+            <BattleNetLogo />
+            <NintendoSwitchLogo />
+            <XboxLogo />
+            <PlaystationLogo />
+          </div>
+          <div className="flex flex-1 justify-end gap-2.5 self-end ">
             <div className="flex items-center">
               <AllGamesIcon />
             </div>
@@ -59,7 +57,7 @@ export const GameSection = () => {
             <div className="flex items-center">
               <AllGamesIcon />
             </div>
-            <span className="font-bold text-primary">Ver todos jogos</span>
+            <span className="font-bold text-white">Ver todos jogos</span>
           </div>
         </div>
       </div>
