@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 
 interface SectionProps {
-  className: string
+  className?: string
   children: React.ReactNode
 }
 
