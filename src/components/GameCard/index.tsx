@@ -1,6 +1,3 @@
-import DiabloBG from './bg.png'
-import DiabloLogo from './logo.png'
-
 interface GameCardProps {
   thumbnailURL: string
   title: string
