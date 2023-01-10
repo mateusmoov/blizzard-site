@@ -23,7 +23,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        '1': "radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%) , url('/assets/banner-hero/games/diablo-bg.png')"
+        '1': "radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%) , url('/assets/banner-hero/games/diablo-bg.png')",
+        '2': "url('/assets/footer-background.png')",
       },
       gridTemplateColumns: {
         'hero': '221px 562px 497px'
