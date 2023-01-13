@@ -13,8 +13,10 @@ export const Button = ({ children, variant, className, icon, ...props }: ButtonP
   }
   return (
     <button {...props} className={variants[variant]}>
-      {icon}
-      <span className="font-poppins text-white">{children}</span>
+      <div className="flex justify-center gap-2	">
+        {icon}
+        <span className="font-poppins text-white">{children}</span>
+      </div>
     </button>
   )
 }

@@ -1,7 +1,7 @@
 import BattleNetLogoText from '/assets/logo-battle-net.png'
 import AppMini from '/assets/ilustrations/app-mini.png'
-import { SquareCheckIcon, DotsWrapperIcon, BuyIcon, PhoneIcon } from 'icons'
-import { Button, Section } from 'components'
+import { SquareCheckIcon, DotsWrapperIcon, BuyIcon, PhoneIcon, AppleLogo } from 'icons'
+import { Button } from 'components'
 export const FooterSection = () => {
   return (
     <div className="bg-2 bg-cover bg-no-repeat">
@@ -32,7 +32,9 @@ export const FooterSection = () => {
                 <p>Compre jogos e itens digitais</p>
               </li>
             </ul>
-            <Button variant="filled">Baixar para MacOS</Button>
+            <Button variant="filled" className="py-3.5 px-8 font-bold" icon={<AppleLogo />}>
+              Baixar para MacOS
+            </Button>
             <div className="mt-12 flex gap-4">
               <PhoneIcon />
               <p className="w-48 font-poppins font-bold text-white">
