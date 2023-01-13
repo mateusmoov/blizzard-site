@@ -22,7 +22,7 @@ export const GameSection = () => {
   const query = useQuery<GameType[]>({ queryKey: ['games'], queryFn: getGames })
   return (
     <div className="bg-black">
-      <Section>
+      <Section className="pb-28">
         <div className="py-20 font-poppins">
           <div className="flex items-end gap-x-40">
             <span className="font-semibold text-platinum-200">GAMES</span>
