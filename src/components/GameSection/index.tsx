@@ -20,7 +20,6 @@ interface GameType {
 
 export const GameSection = () => {
   const query = useQuery<GameType[]>({ queryKey: ['games'], queryFn: getGames })
-
   return (
     <div className="bg-black">
       <Section>
