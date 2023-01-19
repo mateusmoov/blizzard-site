@@ -15,7 +15,7 @@ export const PrincipalSection = () => {
 
       <Section className="flex h-[736px] justify-between py-20">
         <div className="flex w-full items-center justify-between">
-          <ul className="sm:flex sm:gap-y-5 md:row-span-2 md:flex-col">
+          <ul className="flex flex-col gap-y-5">
             <li tabIndex={0}>
               <img src={Diablo4} alt="Diablo 4" width="48" />
             </li>
