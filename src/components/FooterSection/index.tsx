@@ -1,12 +1,13 @@
 import BattleNetLogoText from '/assets/logo-battle-net.png'
 import AppMini from '/assets/ilustrations/app-mini.png'
+import App from '/assets/ilustrations/app.png'
 import { SquareCheckIcon, DotsWrapperIcon, BuyIcon, PhoneIcon, AppleLogo } from 'icons'
-import { Button } from 'components'
+import { Button, Section } from 'components'
 export const FooterSection = () => {
   return (
-    <div className="bg-2 bg-cover bg-no-repeat">
-      <div className="flex justify-center">
-        <div className="ml-auto flex items-center">
+    <div className="bg-2 bg-cover bg-no-repeat pb-36">
+      <Section className="pt-32">
+        <div className="flex items-center">
           <div>
             <img src={BattleNetLogoText} alt="Battle Net Logo" />
             <h1 className="text-4xl font-bold leading-[71px] text-white">
@@ -45,13 +46,16 @@ export const FooterSection = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="h-[53rem] w-auto max-w-full bg-3 ">
-          <div className="flex h-full w-full items-end justify-center object-cover ">
-            <img src={AppMini} alt="Interface app mini" />
+          <div className="relative top-[300px] left-[300px] flex h-full w-full items-end justify-center object-cover ">
+            <img src={App} alt="Interface" className="absolute" />
+            <img
+              src={AppMini}
+              alt="Interface app mini"
+              className="absolute right-[109px] top-[-269px] z-10"
+            />
           </div>
         </div>
-      </div>
+      </Section>
     </div>
   )
 }
