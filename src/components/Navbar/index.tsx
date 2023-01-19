@@ -8,7 +8,7 @@ export const Navbar = () => {
         <div className="flex gap-x-28">
           <BlizzardLogo />
           <nav className="flex items-center">
-            <ul className="flex gap-x-8 space-x-3 font-poppins font-medium text-white">
+            <ul className="gap-x-8 space-x-3 font-poppins font-medium text-white sm:hidden md:flex">
               <li>
                 <a href="http://www.pudim.com.br" className="space-x-3">
                   <span>Jogos</span>

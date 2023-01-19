@@ -13,48 +13,52 @@ export const PrincipalSection = () => {
     <div className="bg-1 bg-cover">
       <Navbar />
 
-      <Section className="grid h-[738px] grid-cols-hero">
-        <div className=" order-2 col-span-1 self-end font-poppins text-white">
-          <h1 className="mb-4 text-6xl font-bold leading-[71px]">
-            Retorne à escuridão com o game Diablo IV
-          </h1>
-          <p className="mb-8 text-lg">O retorno de Lilith traz uma era de escuridão e sofrimento</p>
-        </div>
+      <Section className="flex h-[736px] justify-between py-20">
+        <div className="flex w-full items-center justify-between">
+          <ul className="sm:flex sm:gap-y-5 md:row-span-2 md:flex-col">
+            <li tabIndex={0}>
+              <img src={Diablo4} alt="Diablo 4" width="48" />
+            </li>
+            <li tabIndex={0}>
+              <img src={HearthStone} alt="HearthStone" width="48" />
+            </li>
+            <li tabIndex={0}>
+              <img src={WoW} alt="World of Warcraft" width="48" />
+            </li>
+            <li tabIndex={0}>
+              <img src={Diablo1} alt="Diablo 1" width="48" />
+            </li>
+            <li tabIndex={0}>
+              <img src={StarCraft2} alt="Star Craft 2" width="48" />
+            </li>
+          </ul>
 
-        <div className="order-4 self-start">
-          <Button variant="filled" className="px-8 py-3.5 font-medium">
-            Jogue agora
-          </Button>
-        </div>
-
-        <div className="order-5 flex flex-col items-end justify-center self-start">
-          <h3 className="mb-4 font-poppins text-lg font-semibold text-white">ASSISTA O TRAILER</h3>
-          <div>
-            <img src={ThumbDiablo4} alt="Thumb Video Diablo 4" />
+          <div className=" w-full max-w-xl self-end font-poppins text-white">
+            <h1 className="mb-4 text-6xl font-bold leading-[71px]">
+              Retorne à escuridão com o game Diablo IV
+            </h1>
+            <p className="mb-8 text-lg">
+              O retorno de Lilith traz uma era de escuridão e sofrimento
+            </p>
+            <div className=" self-start">
+              <Button variant="filled" className="px-8 py-3.5 font-medium">
+                Jogue agora
+              </Button>
+            </div>
           </div>
-        </div>
 
-        <ul className="order-1 row-span-2 flex flex-col gap-y-5">
-          <li tabIndex={0}>
-            <img src={Diablo4} alt="Diablo 4" width="48" />
-          </li>
-          <li tabIndex={0}>
-            <img src={HearthStone} alt="HearthStone" width="48" />
-          </li>
-          <li tabIndex={0}>
-            <img src={WoW} alt="World of Warcraft" width="48" />
-          </li>
-          <li tabIndex={0}>
-            <img src={Diablo1} alt="Diablo 1" width="48" />
-          </li>
-          <li tabIndex={0}>
-            <img src={StarCraft2} alt="Star Craft 2" width="48" />
-          </li>
-        </ul>
-
-        <div className="order-3 ml-auto">
-          <div>
-            <img src={Diablo4XL} alt="Diablo 4" />
+          <div className="flex h-full flex-col">
+            <div>
+              <img src={Diablo4XL} alt="Diablo 4" />
+            </div>
+            <div className="flex flex-col items-end ">
+              <h3 className="mb-4 font-poppins text-lg font-semibold text-white">
+                ASSISTA O TRAILER
+              </h3>
+              <div>
+                <img src={ThumbDiablo4} alt="Thumb Video Diablo 4" />
+              </div>
+            </div>
           </div>
         </div>
       </Section>
