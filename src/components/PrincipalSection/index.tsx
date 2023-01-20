@@ -1,6 +1,7 @@
 import { Games, gameData } from './games'
 import { Navbar, Button, Section } from 'components'
 import { useState } from 'react'
+import { PlayButton } from 'icons'
 
 export const PrincipalSection = () => {
   const [game, setGame] = useState('diablo4')
@@ -44,7 +45,10 @@ export const PrincipalSection = () => {
               <h3 className="mb-4 font-poppins text-lg font-semibold text-white">
                 ASSISTA O TRAILER
               </h3>
-              <div>
+              <div className="flex items-center justify-center">
+                <div className="absolute">
+                  <PlayButton />
+                </div>
                 <img src={gameData[game].thumbImage} alt="Thumb Video Diablo 4" />
               </div>
             </div>
