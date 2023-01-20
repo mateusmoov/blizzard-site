@@ -2,19 +2,28 @@ import { Games, gameData } from './games'
 import { Navbar, Button, Section } from 'components'
 import { useState } from 'react'
 import { PlayButton } from 'icons'
+import ProgressBar from '@ramonak/react-progress-bar'
 
 export const PrincipalSection = () => {
   const [game, setGame] = useState('diablo4')
+  const [progress, setProgress] = useState(0)
+
+  const progressBarLoop = setInterval(() => {
+    setProgress(progress + 10)
+  }, 500)
+
+  if (progress >= 100) {
+    clearInterval(progressBarLoop)
+  }
 
   return (
     <div
       style={{
         backgroundImage: `${gameData[game].backgroundImage}`
       }}
-      className="bg-cover"
+      className=" bg-cover"
     >
       <Navbar />
-
       <Section className="flex h-[736px] justify-between py-20">
         <div className="flex w-full items-center justify-between">
           <ul className="flex flex-col gap-y-5">
@@ -55,6 +64,7 @@ export const PrincipalSection = () => {
           </div>
         </div>
       </Section>
+      <ProgressBar completed={progress} height="3px" isLabelVisible={false} />;
     </div>
   )
 }
