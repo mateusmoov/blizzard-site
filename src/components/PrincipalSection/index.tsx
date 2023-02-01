@@ -7,8 +7,6 @@ export const PrincipalSection = () => {
   const [gameName, setGameName] = useState('diablo4')
   const [gameIndice, setGameIndice] = useState(0)
 
-  console.log(gameName, gameIndice)
-
   return (
     <div
       style={{
