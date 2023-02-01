@@ -1,20 +1,26 @@
 import { Games, gameData } from './games'
 import { Navbar, Button, Section } from 'components'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PlayButton } from 'icons'
-import ProgressBar from '@ramonak/react-progress-bar'
 
 export const PrincipalSection = () => {
   const [game, setGame] = useState('diablo4')
   const [progress, setProgress] = useState(0)
 
-  const progressBarLoop = setInterval(() => {
-    setProgress(progress + 10)
-  }, 500)
-
-  if (progress >= 100) {
-    clearInterval(progressBarLoop)
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      let gameIndice = 0
+      if (progress <= 100) {
+        setProgress((prev) => prev + 5)
+        // setGame(Games[0].name)
+      } else {
+        setProgress(0)
+        gameIndice++
+        setGame(Games[gameIndice].name)
+      }
+    }, 500)
+    return () => clearInterval(interval)
+  })
 
   return (
     <div
@@ -64,7 +70,13 @@ export const PrincipalSection = () => {
           </div>
         </div>
       </Section>
-      <ProgressBar completed={progress} height="3px" isLabelVisible={false} />;
+      <div className="relative h-2 w-full overflow-hidden">
+        <div
+          className="h-full w-full animate-slide bg-primary"
+          onAnimationEnd={() => console.log('acabo')}
+          key={game}
+        />
+      </div>
     </div>
   )
 }

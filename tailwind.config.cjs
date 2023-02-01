@@ -33,7 +33,20 @@ module.exports = {
     },
     fontFamily: {
       'poppins': 'Poppins, sans-serif'
-    }
+    },
+    keyframes: {
+      slide: {
+        from: {
+          transform: 'translateX(-100%)',
+        },
+        to: {
+          transform: 'translateX(0)',
+        },
+      },
+    },
+    animation: {
+      slide: 'slide 10s linear',
+    },
   },
   plugins: [],
 }
