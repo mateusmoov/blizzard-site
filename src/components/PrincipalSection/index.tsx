@@ -4,30 +4,17 @@ import { useEffect, useState } from 'react'
 import { PlayButton } from 'icons'
 
 export const PrincipalSection = () => {
-  const [game, setGame] = useState('diablo4')
-  const [progress, setProgress] = useState(0)
+  const [gameName, setGameName] = useState('diablo4')
+  const [gameIndice, setGameIndice] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      let gameIndice = 0
-      if (progress <= 100) {
-        setProgress((prev) => prev + 5)
-        // setGame(Games[0].name)
-      } else {
-        setProgress(0)
-        gameIndice++
-        setGame(Games[gameIndice].name)
-      }
-    }, 500)
-    return () => clearInterval(interval)
-  })
+  console.log(gameName, gameIndice)
 
   return (
     <div
       style={{
-        backgroundImage: `${gameData[game].backgroundImage}`
+        backgroundImage: `${gameData[gameName].backgroundImage}`
       }}
-      className=" bg-cover"
+      className="bg-cover"
     >
       <Navbar />
       <Section className="flex h-[736px] justify-between py-20">
@@ -35,26 +22,36 @@ export const PrincipalSection = () => {
           <ul className="flex flex-col gap-y-5">
             {Games.map((game, index) => (
               <li tabIndex={0} key={index}>
-                <button onClick={() => setGame(game.name)}>
-                  <img src={game.image} alt="Diablo 4" width="48" />
+                <button
+                  onClick={() => {
+                    setGameName(game.name)
+                    setGameIndice(index)
+                  }}
+                >
+                  <img
+                    src={game.image}
+                    alt={game.alt}
+                    width="48"
+                    className={gameName === game.name ? 'grayscale-0' : 'grayscale'}
+                  />
                 </button>
               </li>
             ))}
           </ul>
 
           <div className=" w-full max-w-xl self-end font-poppins text-white">
-            <h1 className="mb-4 text-6xl font-bold leading-[71px]">{gameData[game].title}</h1>
-            <p className="mb-8 text-lg">{gameData[game].subtitle}</p>
+            <h1 className="mb-4 text-6xl font-bold leading-[71px]">{gameData[gameName].title}</h1>
+            <p className="mb-8 text-lg">{gameData[gameName].subtitle}</p>
             <div className=" self-start">
               <Button variant="filled" className="px-8 py-3.5 font-medium">
-                {gameData[game].textButton}
+                {gameData[gameName].textButton}
               </Button>
             </div>
           </div>
 
           <div className="flex h-full flex-col">
             <div>
-              <img src={gameData[game].logo} alt="Diablo 4" />
+              <img src={gameData[gameName].logo} alt="Diablo 4" />
             </div>
             <div className="flex flex-col items-end ">
               <h3 className="mb-4 font-poppins text-lg font-semibold text-white">
@@ -64,17 +61,22 @@ export const PrincipalSection = () => {
                 <div className="absolute">
                   <PlayButton />
                 </div>
-                <img src={gameData[game].thumbImage} alt="Thumb Video Diablo 4" />
+                <img src={gameData[gameName].thumbImage} alt="Thumb Video Diablo 4" />
               </div>
             </div>
           </div>
         </div>
       </Section>
+
       <div className="relative h-2 w-full overflow-hidden">
         <div
           className="h-full w-full animate-slide bg-primary"
-          onAnimationEnd={() => console.log('acabo')}
-          key={game}
+          onAnimationEnd={() => {
+            const newIndice = gameIndice === 2 ? 0 : gameIndice + 1
+            setGameIndice(newIndice)
+            setGameName(Games[newIndice].name)
+          }}
+          key={gameName}
         />
       </div>
     </div>

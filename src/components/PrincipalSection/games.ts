@@ -21,6 +21,7 @@ import WoWBG from '/assets/banner-hero/games/wow-bg.png'
 interface GamesType {
   name: string
   image: string
+  alt: string
 }
 
 interface gameDataType {
@@ -39,23 +40,28 @@ interface gameDataType {
 export const Games: GamesType[] = [
   {
     name: 'diablo4',
-    image: Diablo4
+    image: Diablo4,
+    alt: 'Diablo 4 Logo'
   },
   {
     name: 'hearthstone',
-    image: HearthStone
+    image: HearthStone,
+    alt: 'HearthStone Logo'
   },
   {
     name: 'wow',
-    image: WoW
+    image: WoW,
+    alt: 'WoW Logo'
   },
   {
     name: 'diablo1',
-    image: Diablo1
+    image: Diablo1,
+    alt: 'Diablo 1 Logo'
   },
   {
     name: 'starcraft2',
-    image: StarCraft2
+    image: StarCraft2,
+    alt: 'StarCraft 2 Logo'
   }
 ]
 

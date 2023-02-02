@@ -43,9 +43,14 @@ module.exports = {
           transform: 'translateX(0)',
         },
       },
+      fadeIn: {
+        '0%': { opacity: 0 },
+        '100%': { opacity: 1 }
+      }
     },
     animation: {
-      slide: 'slide 10s linear',
+      slide: 'slide 5s ease-in-out',
+      fade: 'fade 4s ease-in-out'
     },
   },
   plugins: [],
