@@ -5,7 +5,7 @@ import { SquareCheckIcon, DotsWrapperIcon, BuyIcon, PhoneIcon, AppleLogo } from 
 import { Button, Section } from 'components'
 export const FooterSection = () => {
   return (
-    <div className="bg-2 bg-cover bg-no-repeat pb-36">
+    <div className="overflow-hidden bg-2 bg-cover bg-no-repeat pb-36">
       <Section className="pt-32">
         <div className="flex items-center">
           <div>

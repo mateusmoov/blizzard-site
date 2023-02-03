@@ -1,21 +1,22 @@
 import { Games, gameData } from './games'
 import { Navbar, Button, Section } from 'components'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { PlayButton } from 'icons'
 
 export const PrincipalSection = () => {
   const [gameName, setGameName] = useState('diablo4')
-  const [gameIndice, setGameIndice] = useState(0)
+  const [gameIndex, setGameIndex] = useState(0)
 
   return (
     <div
       style={{
         backgroundImage: `${gameData[gameName].backgroundImage}`
       }}
-      className="bg-cover"
+      className=" bg-cover"
     >
+      <div className="absolute z-20 h-[640px] w-full bg-primary"></div>
       <Navbar />
-      <Section className="flex h-[736px] justify-between py-20">
+      <Section className="flex h-[736px] justify-between">
         <div className="flex w-full items-center justify-between">
           <ul className="flex flex-col gap-y-5">
             {Games.map((game, index) => (
@@ -23,7 +24,7 @@ export const PrincipalSection = () => {
                 <button
                   onClick={() => {
                     setGameName(game.name)
-                    setGameIndice(index)
+                    setGameIndex(index)
                   }}
                 >
                   <img
@@ -70,8 +71,8 @@ export const PrincipalSection = () => {
         <div
           className="h-full w-full animate-slide bg-primary"
           onAnimationEnd={() => {
-            const newIndice = gameIndice === 2 ? 0 : gameIndice + 1
-            setGameIndice(newIndice)
+            const newIndice = gameIndex === 2 ? 0 : gameIndex + 1
+            setGameIndex(newIndice)
             setGameName(Games[newIndice].name)
           }}
           key={gameName}
