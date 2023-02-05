@@ -14,7 +14,10 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#00AEFF',
-        'black': '#020203',
+        'black': {
+          100: '#0F1114',
+          200: '#020203'
+        },
         'white': '#FFFFFF',
         'platinum': {
           100: '#E5E5E5',
@@ -25,7 +28,8 @@ module.exports = {
       backgroundImage: {
         '1': "radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%))",
         '2': "url('/assets/footer-background.png')",
-        '3': "url('/assets/ilustrations/app.png')"
+        '3': "url('/assets/ilustrations/app.png')",
+        'menu': 'linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%)',
       },
       gridTemplateColumns: {
         'hero': '221px 562px 497px'

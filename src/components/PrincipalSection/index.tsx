@@ -14,7 +14,6 @@ export const PrincipalSection = () => {
       }}
       className=" bg-cover"
     >
-      <div className="absolute z-20 h-[640px] w-full bg-primary"></div>
       <Navbar />
       <Section className="flex h-[736px] justify-between">
         <div className="flex w-full items-center justify-between">

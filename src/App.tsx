@@ -1,14 +1,15 @@
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
-import { PrincipalSection, GameSection, FooterSection } from 'components'
+import { PrincipalSection, GameSection, FooterSection, Menu } from 'components'
 
 const queryClient = new QueryClient()
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <PrincipalSection />
+      <Menu />
+      {/* <PrincipalSection />
       <GameSection />
-      <FooterSection />
+      <FooterSection /> */}
     </QueryClientProvider>
   )
 }
