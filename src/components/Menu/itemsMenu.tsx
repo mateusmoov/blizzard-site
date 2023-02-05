@@ -24,6 +24,11 @@ interface GamesType {
   alt: string
 }
 
+interface FooterType {
+  text: string
+  icon: string
+}
+
 export const GamesMenu: GamesType[] = [
   {
     name: 'Diablo® II ressurected',
@@ -112,5 +117,51 @@ export const EsportsMenu: GamesType[] = [
     name: 'Liga de Overwatch®',
     image: OverwatchEs,
     alt: 'Liga de Overwatch® Logo'
+  }
+]
+
+export const FooterGames: FooterType[] = [
+  {
+    text: 'Hearthstone® masters',
+    icon: HearthstoneEs
+  },
+  {
+    text: 'Campeonato Mundial de Arena WoW®',
+    icon: WoWEs
+  },
+  {
+    text: 'StarCraft® II WCS',
+    icon: StarCraftEs
+  },
+  {
+    text: 'Copa Mundial de Overwatch®',
+    icon: Overwatch2Es
+  },
+  {
+    text: 'Liga de Overwatch®',
+    icon: OverwatchEs
+  }
+]
+
+export const FooterMenu: FooterType[] = [
+  {
+    text: 'Hearthstone® masters',
+    icon: HearthstoneEs
+  },
+  {
+    text: 'Campeonato Mundial de Arena WoW®',
+    icon: WoWEs
+  },
+  {
+    text: 'StarCraft® II WCS',
+    icon: StarCraftEs
+  },
+  {
+    text: 'Copa Mundial de Overwatch®',
+    icon: Overwatch2Es
+  },
+  {
+    text: 'Liga de Overwatch®',
+    icon: OverwatchEs
   }
 ]
