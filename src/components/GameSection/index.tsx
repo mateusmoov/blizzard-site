@@ -21,7 +21,7 @@ interface GameType {
 export const GameSection = () => {
   const query = useQuery<GameType[]>({ queryKey: ['games'], queryFn: getGames })
   return (
-    <div className="bg-black">
+    <div className="bg-black-200">
       <Section className="pb-28">
         <div className="py-20 font-poppins">
           <div className="flex items-end gap-x-40">

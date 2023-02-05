@@ -1,5 +1,5 @@
 import { Games, gameData } from './games'
-import { Navbar, Button, Section } from 'components'
+import { Navbar, Button, Section, Menu } from 'components'
 import { useState } from 'react'
 import { PlayButton } from 'icons'
 
@@ -15,6 +15,7 @@ export const PrincipalSection = () => {
       className=" bg-cover"
     >
       <Navbar />
+      <Menu />
       <Section className="flex h-[736px] justify-between">
         <div className="flex w-full items-center justify-between">
           <ul className="flex flex-col gap-y-5">
@@ -65,7 +66,6 @@ export const PrincipalSection = () => {
           </div>
         </div>
       </Section>
-
       <div className="relative h-2 w-full overflow-hidden">
         <div
           className="h-full w-full animate-slide bg-primary"

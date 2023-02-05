@@ -6,10 +6,9 @@ const queryClient = new QueryClient()
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Menu />
-      {/* <PrincipalSection />
+      <PrincipalSection />
       <GameSection />
-      <FooterSection /> */}
+      <FooterSection />
     </QueryClientProvider>
   )
 }
