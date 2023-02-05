@@ -11,6 +11,12 @@ import Starcraft2 from '/assets/games-menu/starcraft-2.png'
 import Starcraft from '/assets/games-menu/starcraft.png'
 import Arcade from '/assets/games-menu/arcade.png'
 
+import HearthstoneEs from '/assets/esports-menu/hearthstone-es.png'
+import WoWEs from '/assets/esports-menu/wow-es.png'
+import OverwatchEs from '/assets/esports-menu/overwatch-es.png'
+import StarCraftEs from '/assets/esports-menu/starcraft-es.png'
+import Overwatch2Es from '/assets/esports-menu/overwatch2-es.png'
+
 export {
   Diablo2,
   Diablo1,
@@ -23,5 +29,10 @@ export {
   Diablo3,
   Starcraft2,
   Starcraft,
-  Arcade
+  Arcade,
+  HearthstoneEs,
+  OverwatchEs,
+  StarCraftEs,
+  Overwatch2Es,
+  WoWEs
 }

@@ -10,7 +10,12 @@ import {
   Diablo3,
   Starcraft2,
   Starcraft,
-  Arcade
+  Arcade,
+  HearthstoneEs,
+  OverwatchEs,
+  StarCraftEs,
+  Overwatch2Es,
+  WoWEs
 } from 'images'
 
 interface GamesType {
@@ -79,5 +84,33 @@ export const GamesMenu: GamesType[] = [
     name: 'Arcade da Blizzard®',
     image: Arcade,
     alt: 'Arcade Logo'
+  }
+]
+
+export const EsportsMenu: GamesType[] = [
+  {
+    name: 'Hearthstone® masters',
+    image: HearthstoneEs,
+    alt: 'Hearthstone masters Logo'
+  },
+  {
+    name: 'Campeonato Mundial de Arena WoW®',
+    image: WoWEs,
+    alt: 'Campeonato Mundial de Arena WoW Logo'
+  },
+  {
+    name: 'StarCraft® II WCS',
+    image: StarCraftEs,
+    alt: 'StarCraft® II WCS Logo'
+  },
+  {
+    name: 'Copa Mundial de Overwatch®',
+    image: Overwatch2Es,
+    alt: 'Copa Overwatch Logo'
+  },
+  {
+    name: 'Liga de Overwatch®',
+    image: OverwatchEs,
+    alt: 'Liga de Overwatch® Logo'
   }
 ]
