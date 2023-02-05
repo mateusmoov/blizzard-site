@@ -22,6 +22,7 @@ module.exports = {
         'platinum': {
           100: '#E5E5E5',
           200: '#8F9199',
+          250: '#9D9D9D', // sorry 
           300: '#828792',
         },
       },
@@ -36,7 +37,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'poppins': 'Poppins, sans-serif'
+      'poppins': 'Poppins, sans-serif',
+      'inter': 'Inter'
     },
     keyframes: {
       slide: {

@@ -19,7 +19,7 @@ interface GamesType {
   alt: string
 }
 
-export const Games: GamesType[] = [
+export const GamesMenu: GamesType[] = [
   {
     name: 'Diablo® II ressurected',
     image: Diablo2,
