@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   Diablo2,
   Diablo1,
@@ -18,6 +19,8 @@ import {
   WoWEs
 } from 'images'
 
+import { AllGamesIcon, BattleNetLogoBlue, DownloadIcon, ChatIcon, TrophyIcon } from 'icons'
+
 interface GamesType {
   name: string
   image: string
@@ -26,7 +29,7 @@ interface GamesType {
 
 interface FooterType {
   text: string
-  icon: string
+  icon: React.ReactNode
 }
 
 export const GamesMenu: GamesType[] = [
@@ -122,46 +125,26 @@ export const EsportsMenu: GamesType[] = [
 
 export const FooterGames: FooterType[] = [
   {
-    text: 'Hearthstone® masters',
-    icon: HearthstoneEs
+    text: 'Ver todos jogos',
+    icon: <AllGamesIcon />
   },
   {
-    text: 'Campeonato Mundial de Arena WoW®',
-    icon: WoWEs
+    text: 'Aplicativo Battle.net',
+    icon: <BattleNetLogoBlue />
   },
   {
-    text: 'StarCraft® II WCS',
-    icon: StarCraftEs
+    text: 'Downloads',
+    icon: <DownloadIcon />
   },
   {
-    text: 'Copa Mundial de Overwatch®',
-    icon: Overwatch2Es
-  },
-  {
-    text: 'Liga de Overwatch®',
-    icon: OverwatchEs
+    text: 'Fóruns dos jogos',
+    icon: <ChatIcon />
   }
 ]
 
-export const FooterMenu: FooterType[] = [
+export const FooterEsports: FooterType[] = [
   {
-    text: 'Hearthstone® masters',
-    icon: HearthstoneEs
-  },
-  {
-    text: 'Campeonato Mundial de Arena WoW®',
-    icon: WoWEs
-  },
-  {
-    text: 'StarCraft® II WCS',
-    icon: StarCraftEs
-  },
-  {
-    text: 'Copa Mundial de Overwatch®',
-    icon: Overwatch2Es
-  },
-  {
-    text: 'Liga de Overwatch®',
-    icon: OverwatchEs
+    text: 'Torneios da comunidade',
+    icon: <TrophyIcon />
   }
 ]

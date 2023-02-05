@@ -8,6 +8,7 @@ interface useStateType {
 
 export const useStore = create<useStateType>((set) => ({
   menuOption: '',
-  addEsports: () => set({ menuOption: 'esports' }),
-  addGames: () => set({ menuOption: 'games' })
+  addEsports: () =>
+    set((state) => ({ menuOption: state.menuOption === 'esports' ? '' : 'esports' })),
+  addGames: () => set((state) => ({ menuOption: state.menuOption === 'games' ? '' : 'games' }))
 }))

@@ -1,9 +1,10 @@
 import { Button } from 'components'
-import { ChevronDown, BlizzardLogo, UserIcon } from 'icons'
+import { ChevronDown, BlizzardLogo, UserIcon, ChevronUp } from 'icons'
 import { useStore } from 'stores'
 
 export const Navbar = () => {
-  const { addEsports, addGames } = useStore()
+  const { addEsports, addGames, menuOption } = useStore()
+
   return (
     <header className="absolute z-30 w-full border-b-2 border-white  border-opacity-5">
       <div className="mx-auto flex max-w-screen-xl justify-between py-7">
@@ -12,15 +13,15 @@ export const Navbar = () => {
           <nav className="flex items-center">
             <ul className="gap-x-8 space-x-3 font-poppins font-medium text-white sm:hidden md:flex">
               <li>
-                <button onClick={addGames} className="space-x-3">
+                <button onClick={addGames} className="flex items-center space-x-3">
                   <span>Jogos</span>
-                  <ChevronDown />
+                  {menuOption === 'games' ? <ChevronUp /> : <ChevronDown />}
                 </button>
               </li>
               <li>
-                <button onClick={addEsports} className="space-x-3">
+                <button onClick={addEsports} className="flex items-center space-x-3">
                   <span>Esportes</span>
-                  <ChevronDown />
+                  {menuOption === 'esports' ? <ChevronUp /> : <ChevronDown />}
                 </button>
               </li>
               <li>
