@@ -1,3 +1,4 @@
+import BattleNetLogoText from '/assets/logo-battle-net.png'
 import Diablo2 from '/assets/games-menu/diablo-2.png'
 import Overwatch2 from '/assets/games-menu/overwatch-2.png'
 import WoW from '/assets/games-menu/wow.png'
@@ -34,5 +35,6 @@ export {
   OverwatchEs,
   StarCraftEs,
   Overwatch2Es,
-  WoWEs
+  WoWEs,
+  BattleNetLogoText
 }
