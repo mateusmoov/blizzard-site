@@ -2,6 +2,7 @@ import { Games, gameData } from './games'
 import { Navbar, Button, Section, Menu } from 'components'
 import { useState } from 'react'
 import { PlayButton } from 'icons'
+import Modal from 'react-modal'
 
 export const PrincipalSection = () => {
   const [gameName, setGameName] = useState('diablo4')

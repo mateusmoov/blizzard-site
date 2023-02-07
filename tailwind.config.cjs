@@ -24,6 +24,7 @@ module.exports = {
           200: '#8F9199',
           250: '#9D9D9D', // sorry 
           300: '#828792',
+          400: '#363842',
         },
       },
       backgroundImage: {
@@ -31,7 +32,7 @@ module.exports = {
         '2': "url('/assets/footer-background.png')",
         '3': "url('/assets/ilustrations/app.png')",
         'menu': 'linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%)',
-        'login': "radial-gradient(36.62% 82.42% at 0% 109.58%, #020203 0%, rgba(196, 196, 196, 0) 100%), url('/assets/background-login.png') "
+        'login': "url('/assets/background-login.png')"
       },
       gridTemplateColumns: {
         'hero': '221px 562px 497px'

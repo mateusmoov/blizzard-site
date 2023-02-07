@@ -477,3 +477,12 @@ export const FacebookLogo = () => {
     </svg>
   )
 }
+
+export const CloseIcon = () => {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.6" d="M17 1L1 17" stroke="#148EFF" strokeWidth="2" />
+      <path d="M17 17L1 0.999999" stroke="#148EFF" strokeWidth="2" />
+    </svg>
+  )
+}
