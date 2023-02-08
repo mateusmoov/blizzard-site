@@ -60,7 +60,19 @@ export const PrincipalSection = () => {
                 <div className="absolute">
                   <PlayButton />
                 </div>
-                <img src={gameData[gameName].thumbImage} alt="Thumb Video Diablo 4" />
+                <div className="group">
+                  <img
+                    src={gameData[gameName].thumbImage}
+                    alt="Thumb Video Diablo 4"
+                    className="block group-hover:hidden"
+                  />
+                  <img
+                    src={gameData[gameName].thumbGif}
+                    alt="GIF Video Diablo 4"
+                    width={280}
+                    className="hidden group-hover:block"
+                  />
+                </div>
               </div>
             </div>
           </div>

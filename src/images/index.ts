@@ -18,6 +18,29 @@ import OverwatchEs from '/assets/esports-menu/overwatch-es.png'
 import StarCraftEs from '/assets/esports-menu/starcraft-es.png'
 import Overwatch2Es from '/assets/esports-menu/overwatch2-es.png'
 
+import LogoDiablo4 from '/assets/banner-hero/icons/game-1.png'
+import LogoHearthStone from '/assets/banner-hero/icons/game-2.png'
+import LogoWoW from '/assets/banner-hero/icons/game-3.png'
+import LogoDiablo1 from '/assets/banner-hero/icons/game-4.png'
+import LogoStarCraft2 from '/assets/banner-hero/icons/game-5.png'
+
+//
+import Diablo4XL from '/assets/banner-hero/games/diablo-logo.png'
+import ThumbDiablo4 from '/assets/banner-hero/games/diablo-animation-cover.png'
+import DiabloBG from '/assets/banner-hero/games/diablo-bg.png'
+
+import HearthstoneXL from '/assets/banner-hero/games/hearthstone-logo.png'
+import HearthstoneThumb from '/assets/banner-hero/games/hearthstone-animation-cover.png'
+import HearthstoneBG from '/assets/banner-hero/games/hearthstone-bg.png'
+
+import WoWXL from '/assets/banner-hero/games/wow-logo.png'
+import WoWThumb from '/assets/banner-hero/games/wow-animation-cover.png'
+import WoWBG from '/assets/banner-hero/games/wow-bg.png'
+
+import Diablo4GIF from '/assets/banner-hero/games/diablo-animation.gif'
+import WoWGIF from '/assets/banner-hero/games/wow-animation.gif'
+import HeartStoneGIF from '/assets/banner-hero/games/hearthstone-animation.gif'
+
 export {
   Diablo2,
   Diablo1,
@@ -36,5 +59,22 @@ export {
   StarCraftEs,
   Overwatch2Es,
   WoWEs,
-  BattleNetLogoText
+  BattleNetLogoText,
+  LogoDiablo4,
+  LogoHearthStone,
+  LogoWoW,
+  LogoDiablo1,
+  LogoStarCraft2,
+  Diablo4XL,
+  ThumbDiablo4,
+  DiabloBG,
+  HearthstoneXL,
+  HearthstoneThumb,
+  HearthstoneBG,
+  WoWXL,
+  WoWThumb,
+  WoWBG,
+  Diablo4GIF,
+  HeartStoneGIF,
+  WoWGIF
 }

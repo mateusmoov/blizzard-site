@@ -1,22 +1,22 @@
-//Logos
-import Diablo4 from '/assets/banner-hero/icons/game-1.png'
-import HearthStone from '/assets/banner-hero/icons/game-2.png'
-import WoW from '/assets/banner-hero/icons/game-3.png'
-import Diablo1 from '/assets/banner-hero/icons/game-4.png'
-import StarCraft2 from '/assets/banner-hero/icons/game-5.png'
-
-//
-import Diablo4XL from '/assets/banner-hero/games/diablo-logo.png'
-import ThumbDiablo4 from '/assets/banner-hero/games/diablo-animation-cover.png'
-import DiabloBG from '/assets/banner-hero/games/diablo-bg.png'
-
-import HearthstoneXL from '/assets/banner-hero/games/hearthstone-logo.png'
-import HearthstoneThumb from '/assets/banner-hero/games/hearthstone-animation-cover.png'
-import HearthstoneBG from '/assets/banner-hero/games/hearthstone-bg.png'
-
-import WoWXL from '/assets/banner-hero/games/wow-logo.png'
-import WoWThumb from '/assets/banner-hero/games/wow-animation-cover.png'
-import WoWBG from '/assets/banner-hero/games/wow-bg.png'
+import {
+  LogoDiablo4,
+  LogoHearthStone,
+  LogoWoW,
+  LogoDiablo1,
+  LogoStarCraft2,
+  Diablo4XL,
+  ThumbDiablo4,
+  DiabloBG,
+  HearthstoneXL,
+  HearthstoneThumb,
+  HearthstoneBG,
+  WoWXL,
+  WoWThumb,
+  WoWBG,
+  Diablo4GIF,
+  HeartStoneGIF,
+  WoWGIF
+} from 'images'
 
 interface GamesType {
   name: string
@@ -34,33 +34,34 @@ interface gameDataType {
     backgroundImage: string
     altLogo: string
     altThumbImage: string
+    thumbGif: string
   }
 }
 
 export const Games: GamesType[] = [
   {
     name: 'diablo4',
-    image: Diablo4,
+    image: LogoDiablo4,
     alt: 'Diablo 4 Logo'
   },
   {
     name: 'hearthstone',
-    image: HearthStone,
+    image: LogoHearthStone,
     alt: 'HearthStone Logo'
   },
   {
     name: 'wow',
-    image: WoW,
+    image: LogoWoW,
     alt: 'WoW Logo'
   },
   {
     name: 'diablo1',
-    image: Diablo1,
+    image: LogoDiablo1,
     alt: 'Diablo 1 Logo'
   },
   {
     name: 'starcraft2',
-    image: StarCraft2,
+    image: LogoStarCraft2,
     alt: 'StarCraft 2 Logo'
   }
 ]
@@ -74,7 +75,8 @@ export const gameData: gameDataType = {
     thumbImage: ThumbDiablo4,
     backgroundImage: `radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%) , url(${DiabloBG})`,
     altLogo: 'Logo Diablo 4',
-    altThumbImage: 'Thumbnail Diablo 4'
+    altThumbImage: 'Thumbnail Diablo 4',
+    thumbGif: Diablo4GIF
   },
   hearthstone: {
     title: 'Novo pacote de expansão de Hearthstone',
@@ -84,7 +86,8 @@ export const gameData: gameDataType = {
     thumbImage: HearthstoneThumb,
     backgroundImage: `radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%) , url(${HearthstoneBG})`,
     altLogo: 'Logo HearthStone',
-    altThumbImage: 'Thumbnail HearthStone'
+    altThumbImage: 'Thumbnail HearthStone',
+    thumbGif: HeartStoneGIF
   },
   wow: {
     title: 'Desbrave as Terras Sombrias em Shadowlands!',
@@ -94,6 +97,7 @@ export const gameData: gameDataType = {
     thumbImage: WoWThumb,
     backgroundImage: `radial-gradient(80.1% 73.1% at 40.6% 50.14%, rgba(2, 2, 3, 0) 0%, #020203 100.1%) , url(${WoWBG})`,
     altLogo: 'Logo World of Warcraft',
-    altThumbImage: 'Thumbnail World of Warcraft'
+    altThumbImage: 'Thumbnail World of Warcraft',
+    thumbGif: WoWGIF
   }
 }

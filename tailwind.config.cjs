@@ -32,7 +32,8 @@ module.exports = {
         '2': "url('/assets/footer-background.png')",
         '3': "url('/assets/ilustrations/app.png')",
         'menu': 'linear-gradient(180deg, #020203 0%, rgba(14, 17, 23, 0.92) 96.35%, rgba(14, 17, 23, 0.9) 100%)',
-        'login': "url('/assets/background-login.png')"
+        'login': "url('/assets/background-login.png')",
+        'diabloHover': "url('/assets/banner-hero/games/diablo-animation-cover.gif')"
       },
       gridTemplateColumns: {
         'hero': '221px 562px 497px'
