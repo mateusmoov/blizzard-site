@@ -1,6 +1,7 @@
-import { Button } from 'components'
+import { Button, LoginModal } from 'components'
 import { ChevronDown, BlizzardLogo, UserIcon, ChevronUp } from 'icons'
 import { useStore } from 'stores'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export const Navbar = () => {
   const { addEsports, addGames, menuOption } = useStore()
@@ -40,13 +41,20 @@ export const Navbar = () => {
           <Button variant="outlined" className="h-10 px-5 leading-[1.3rem]">
             Criar conta
           </Button>
-          <Button
-            variant="filled"
-            icon={<UserIcon />}
-            className="h-10 gap-x-1.5 px-[2.1rem] leading-[1.3rem]"
-          >
-            Logar
-          </Button>
+          <Dialog.Root>
+            <Dialog.Trigger asChild>
+              <Button
+                variant="filled"
+                icon={<UserIcon />}
+                className="h-10 gap-x-1.5 px-[2.1rem] leading-[1.3rem]"
+              >
+                Logar
+              </Button>
+            </Dialog.Trigger>
+            <Dialog.Portal>
+              <LoginModal />
+            </Dialog.Portal>
+          </Dialog.Root>
         </div>
       </div>
     </header>

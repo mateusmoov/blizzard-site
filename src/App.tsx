@@ -1,5 +1,5 @@
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
-import { PrincipalSection, GameSection, FooterSection, Menu, LoginModal } from 'components'
+import { PrincipalSection, GameSection, FooterSection } from 'components'
 
 const queryClient = new QueryClient()
 
