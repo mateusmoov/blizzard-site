@@ -12,6 +12,7 @@ import {
   QuestionMarkIcon
 } from 'icons'
 import { Button, Section } from 'components'
+
 export const FooterSection = () => {
   const detectOperatingSystem = () => {
     const navApp = navigator.userAgent.toLowerCase()
@@ -43,9 +44,9 @@ export const FooterSection = () => {
   console.log(detectOperatingSystem())
 
   return (
-    <div className="overflow-hidden bg-2 bg-cover bg-no-repeat pb-36">
-      <Section className="pt-32">
-        <div className="flex items-center">
+    <div className="overflow-hidden bg-2 bg-cover bg-no-repeat">
+      <Section className="relative flex flex-col py-40 md:flex-row">
+        <div className="relative z-10 flex items-center">
           <div>
             <img src={BattleNetLogoText} alt="Battle Net Logo" />
             <h1 className="text-4xl font-bold leading-[71px] text-white">
@@ -88,14 +89,18 @@ export const FooterSection = () => {
               </p>
             </div>
           </div>
-          <div className="relative top-[300px] left-[300px] flex h-full w-full items-end justify-center object-cover ">
-            <img src={App} alt="Interface" className="absolute" />
-            <img
-              src={AppMini}
-              alt="Interface app mini"
-              className="absolute right-[109px] top-[-269px] z-10"
-            />
-          </div>
+        </div>
+        <div className="flex h-full w-full items-end justify-center object-cover">
+          <img
+            src={App}
+            className="absolute top-[15%] -right-[40%] md:-right-1/4"
+            alt="imagem foda"
+          />
+          <img
+            src={AppMini}
+            className="absolute top-1/2 -right-[20%] md:-right-[10%]"
+            alt="mini imagem foda"
+          />
         </div>
       </Section>
     </div>
