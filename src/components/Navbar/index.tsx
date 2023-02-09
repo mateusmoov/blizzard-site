@@ -51,9 +51,7 @@ export const Navbar = () => {
                 Logar
               </Button>
             </Dialog.Trigger>
-            <Dialog.Portal>
-              <LoginModal />
-            </Dialog.Portal>
+            <LoginModal />
           </Dialog.Root>
         </div>
       </div>
