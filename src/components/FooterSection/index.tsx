@@ -1,10 +1,48 @@
 import BattleNetLogoText from '/assets/logo-battle-net.png'
-import AppMini from '/assets/ilustrations/app-mini-2.png'
-import App from '/assets/ilustrations/app-2.png'
-import { SquareCheckIcon, DotsWrapperIcon, BuyIcon, PhoneIcon, AppleLogo } from 'icons'
+import AppMini from '/assets/ilustrations/app-mini.png'
+import App from '/assets/ilustrations/app.png'
+import {
+  SquareCheckIcon,
+  DotsWrapperIcon,
+  BuyIcon,
+  PhoneIcon,
+  WindowsIcon,
+  LinuxIcon,
+  AppleLogo,
+  QuestionMarkIcon
+} from 'icons'
 import { Button, Section } from 'components'
 
 export const FooterSection = () => {
+  const detectOperatingSystem = () => {
+    const navApp = navigator.userAgent.toLowerCase()
+
+    switch (true) {
+      case navApp.includes('win'):
+        return {
+          name: 'Windows',
+          icon: <WindowsIcon />
+        }
+      case navApp.includes('mac'):
+        return {
+          name: 'MacOS',
+          icon: <AppleLogo />
+        }
+      case navApp.includes('linux'):
+        return {
+          name: 'Linux',
+          icon: <LinuxIcon />
+        }
+      default:
+        return {
+          name: 'Que sistema é esse?',
+          icon: <QuestionMarkIcon />
+        }
+    }
+  }
+
+  console.log(detectOperatingSystem())
+
   return (
     <div className="overflow-hidden bg-2 bg-cover bg-no-repeat">
       <Section className="relative flex flex-col py-40 md:flex-row">
@@ -34,8 +72,12 @@ export const FooterSection = () => {
                 <p>Compre jogos e itens digitais</p>
               </li>
             </ul>
-            <Button variant="filled" className="py-3.5 px-8 font-bold" icon={<AppleLogo />}>
-              Baixar para MacOS
+            <Button
+              variant="filled"
+              className="py-3.5 px-8 font-bold"
+              icon={detectOperatingSystem().icon}
+            >
+              Baixar para {detectOperatingSystem().name}
             </Button>
             <div className="mt-12 flex gap-4">
               <PhoneIcon />
