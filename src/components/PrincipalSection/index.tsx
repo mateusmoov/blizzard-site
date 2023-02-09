@@ -38,8 +38,8 @@ export const PrincipalSection = () => {
             ))}
           </ul>
 
-          <div className=" w-full max-w-xl self-end font-poppins text-white">
-            <h1 className="mb-4 text-6xl font-bold leading-[71px]">{gameData[gameName].title}</h1>
+          <div className=" mb-28 w-full max-w-xl self-end font-poppins text-white">
+            <h1 className="mb-4 text-6xl font-bold leading-tight">{gameData[gameName].title}</h1>
             <p className="mb-8 text-lg">{gameData[gameName].subtitle}</p>
             <div className=" self-start">
               <Button variant="filled" className="px-8 py-3.5 font-medium">
@@ -49,7 +49,7 @@ export const PrincipalSection = () => {
           </div>
 
           <div className="flex h-full flex-col">
-            <div>
+            <div className="mb-28">
               <img src={gameData[gameName].logo} alt="Diablo 4" />
             </div>
             <div className="flex flex-col items-end ">
