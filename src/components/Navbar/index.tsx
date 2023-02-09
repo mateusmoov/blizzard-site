@@ -26,13 +26,13 @@ export const Navbar = () => {
                 </button>
               </li>
               <li>
-                <a href="http://www.pudim.com.br">Loja</a>
+                <a href="https://youtu.be/dQw4w9WgXcQ">Loja</a>
               </li>
               <li>
-                <a href="http://www.pudim.com.br">Notícias</a>
+                <a href="https://youtu.be/dQw4w9WgXcQ">Notícias</a>
               </li>
               <li>
-                <a href="http://www.pudim.com.br">Suporte</a>
+                <a href="https://youtu.be/dQw4w9WgXcQ">Suporte</a>
               </li>
             </ul>
           </nav>
