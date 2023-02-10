@@ -24,24 +24,33 @@ export const GameSection = () => {
     <div className="bg-black-200">
       <Section className="pb-28">
         <div className="py-20 font-poppins">
-          <div className="flex items-end gap-x-40">
-            <span className="font-semibold text-platinum-200">GAMES</span>
-            <div className="w-44">
-              <h1 className="text-2xl font-bold text-white">Jogos exclusivos</h1>
-            </div>
-            <div className="flex gap-6">
-              <BattleNetLogo />
-              <NintendoSwitchLogo />
-              <XboxLogo />
-              <PlaystationLogo />
-            </div>
-            <div className="flex flex-1 justify-end gap-2.5 self-end ">
-              <div className="flex items-center">
-                <AllGamesIcon />
+          <Section>
+            <div className="flex items-end justify-center">
+              <div className="flex gap-[17rem]">
+                <span className="hidden items-center font-semibold text-platinum-200 lg:flex">
+                  GAMES
+                </span>
+                <div className="w-44">
+                  <h1 className="text-2xl font-bold text-white">Jogos exclusivos</h1>
+                </div>
               </div>
-              <span className="font-bold text-primary">Ver todos jogos</span>
+
+              <div className=" flex flex-1 justify-between">
+                <div className="ml-7  hidden gap-6 lg:flex">
+                  <BattleNetLogo />
+                  <NintendoSwitchLogo />
+                  <XboxLogo />
+                  <PlaystationLogo />
+                </div>
+                <div className="flex flex-1 justify-end self-end ">
+                  <div className="flex items-center gap-3">
+                    <AllGamesIcon />
+                    <span className="font-bold text-primary">Ver todos jogos</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </Section>
         </div>
         <div className="flex flex-wrap justify-center gap-9">
           {query.data?.map((game, key: number) => (

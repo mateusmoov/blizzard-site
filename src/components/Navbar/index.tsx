@@ -1,4 +1,4 @@
-import { Button, LoginModal } from 'components'
+import { Section, Button, LoginModal } from 'components'
 import { ChevronDown, BlizzardLogo, UserIcon, ChevronUp } from 'icons'
 import { useStore } from 'stores'
 import * as Dialog from '@radix-ui/react-dialog'
@@ -8,11 +8,11 @@ export const Navbar = () => {
 
   return (
     <header className="absolute z-30 w-full border-b-2 border-white  border-opacity-5">
-      <div className="mx-auto flex max-w-screen-xl justify-between py-7">
+      <Section className="flex justify-between py-7">
         <div className="flex gap-x-28">
-          <BlizzardLogo />
+          <BlizzardLogo className="w-full max-w-[86px] xl:max-w-[115px]" />
           <nav className="flex items-center">
-            <ul className="gap-x-8 space-x-3 font-poppins font-medium text-white sm:hidden md:flex">
+            <ul className="hidden gap-x-8 space-x-3 font-poppins text-sm font-medium text-white lg:flex">
               <li>
                 <button onClick={addGames} className="flex items-center space-x-3">
                   <span>Jogos</span>
@@ -54,7 +54,7 @@ export const Navbar = () => {
             <LoginModal />
           </Dialog.Root>
         </div>
-      </div>
+      </Section>
     </header>
   )
 }

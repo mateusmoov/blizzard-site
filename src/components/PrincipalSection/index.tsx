@@ -4,8 +4,9 @@ import { useState } from 'react'
 import { PlayButton } from 'icons'
 
 export const PrincipalSection = () => {
-  const [gameName, setGameName] = useState('diablo4')
   const [gameIndex, setGameIndex] = useState(0)
+
+  const gameName = Games[gameIndex].name
 
   return (
     <div
@@ -23,7 +24,6 @@ export const PrincipalSection = () => {
               <li tabIndex={0} key={index}>
                 <button
                   onClick={() => {
-                    setGameName(game.name)
                     setGameIndex(index)
                   }}
                 >
@@ -84,7 +84,6 @@ export const PrincipalSection = () => {
           onAnimationEnd={() => {
             const newIndice = gameIndex === 2 ? 0 : gameIndex + 1
             setGameIndex(newIndice)
-            setGameName(Games[newIndice].name)
           }}
           key={gameName}
         />
