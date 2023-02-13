@@ -7,7 +7,7 @@ interface SectionProps {
 }
 
 export const Section = ({ className, children }: SectionProps) => {
-  return <div className={clsx('container mx-auto items-center', className)}>{children}</div>
+  return <div className={clsx('container mx-auto items-center px-8', className)}>{children}</div>
 }
 
 export default Section

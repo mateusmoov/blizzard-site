@@ -50,7 +50,7 @@ export const GameSection = () => {
             </div>
           </div>
         </div>
-        <div className="grid gap-9  lg:sm:grid-cols-4">
+        <div className="grid gap-9  sm:grid-cols-3 md:grid-cols-3 lg:sm:grid-cols-4">
           {query.data?.map((game, key: number) => (
             <GameCard
               thumbnailURL={game.image}
@@ -60,7 +60,7 @@ export const GameSection = () => {
               key={key}
             />
           ))}
-          <div className=" mb-auto flex h-[412.8px] w-[301px] flex-col items-center justify-center rounded border-2 border-white border-opacity-5">
+          <div className=" mb-auto flex h-full max-h-[412.8px] w-full flex-col items-center justify-center rounded border-2 border-white border-opacity-5">
             <BlizzardLogo />
             <div className="mt-9 flex gap-2.5">
               <div className="flex items-center">
