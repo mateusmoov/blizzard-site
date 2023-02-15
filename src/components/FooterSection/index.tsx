@@ -41,8 +41,6 @@ export const FooterSection = () => {
     }
   }
 
-  console.log(detectOperatingSystem())
-
   return (
     <div className="overflow-hidden bg-2 bg-cover bg-no-repeat">
       <Section className="relative flex flex-col py-40  md:flex-row">
