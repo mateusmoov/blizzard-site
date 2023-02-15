@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <header className="absolute z-30 w-full border-b-2 border-white  border-opacity-5">
-      <Section className="flex justify-between py-7">
+      <Section className="flex w-full  justify-between py-7">
         <div className="flex gap-x-28">
           <BlizzardLogo className="xl:max-w-[115px] w-full max-w-[86px]" />
           <nav className="flex items-center">
