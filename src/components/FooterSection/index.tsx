@@ -45,7 +45,7 @@ export const FooterSection = () => {
 
   return (
     <div className="overflow-hidden bg-2 bg-cover bg-no-repeat">
-      <Section className="relative flex flex-col py-40 md:hidden md:flex-row">
+      <Section className="relative flex flex-col py-40  md:flex-row">
         <div className="relative z-10 flex items-center">
           <div>
             <img src={BattleNetLogoText} alt="Battle Net Logo" />

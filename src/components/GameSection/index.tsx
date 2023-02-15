@@ -50,7 +50,7 @@ export const GameSection = () => {
             </div>
           </div>
         </div>
-        <div className="grid gap-9  sm:grid-cols-3 md:grid-cols-3 lg:sm:grid-cols-4">
+        <div className="grid grid-cols-2  gap-9 sm:grid-cols-3 lg:sm:grid-cols-4">
           {query.data?.map((game, key: number) => (
             <GameCard
               thumbnailURL={game.image}
