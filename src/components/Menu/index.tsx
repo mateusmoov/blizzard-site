@@ -9,7 +9,7 @@ export const Menu = () => {
   return (
     <>
       {typeMenu && (
-        <div className="absolute z-10 h-[570px] w-full bg-menu backdrop-blur">
+        <div className="absolute z-10 hidden h-[570px] w-full bg-menu backdrop-blur xl:block">
           <Section className="flex h-full justify-center">
             <div className="flex h-44 w-[1272px] flex-wrap justify-center gap-8">
               {menu.map((gameItem, index) => (

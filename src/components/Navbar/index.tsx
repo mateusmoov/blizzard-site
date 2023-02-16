@@ -7,10 +7,10 @@ export const Navbar = () => {
   const { addEsports, addGames, menuOption } = useStore()
 
   return (
-    <header className="absolute z-30 w-full border-b-2 border-white  border-opacity-5">
+    <header className="absolute z-30 w-full border-b-2  border-white border-opacity-5">
       <Section className="flex w-full  justify-between py-7">
         <div className="flex gap-x-28">
-          <BlizzardLogo className="xl:max-w-[115px] w-full max-w-[86px]" />
+          <BlizzardLogo className="w-full max-w-[86px] xl:max-w-[115px]" />
           <nav className="flex items-center">
             <ul className="hidden gap-x-8 space-x-3 font-poppins text-sm font-medium text-white lg:flex">
               <li>
@@ -37,7 +37,7 @@ export const Navbar = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex gap-x-4">
+        <div className="hidden gap-x-4 sm:flex">
           <Button variant="outlined" className="h-10 px-5 leading-[1.3rem]">
             Criar conta
           </Button>
