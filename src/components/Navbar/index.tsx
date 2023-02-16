@@ -1,5 +1,5 @@
 import { Section, Button, LoginModal } from 'components'
-import { ChevronDown, BlizzardLogo, UserIcon, ChevronUp } from 'icons'
+import { ChevronDown, BlizzardLogo, UserIcon, ChevronUp, HamburguerNavbarIcon } from 'icons'
 import { useStore } from 'stores'
 import * as Dialog from '@radix-ui/react-dialog'
 
@@ -53,6 +53,9 @@ export const Navbar = () => {
             </Dialog.Trigger>
             <LoginModal />
           </Dialog.Root>
+        </div>
+        <div className="block lg:hidden">
+          <HamburguerNavbarIcon />
         </div>
       </Section>
     </header>
