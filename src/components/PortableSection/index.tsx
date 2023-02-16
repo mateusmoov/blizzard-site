@@ -11,8 +11,8 @@ interface PortableSectionType {
 
 export const PortableSection = ({ gameName, setGameIndex, className }: PortableSectionType) => {
   return (
-    <Section className={clsx('relative h-[736px] w-full justify-between', className)}>
-      <div className="absolute hidden flex-col  gap-52 sm:flex">
+    <Section className={clsx('relative h-[622px] w-full justify-center sm:h-[768px]', className)}>
+      <div className="absolute right-0 hidden  flex-col gap-52 sm:flex">
         <img src={gameData[gameName].logo} alt="Diablo 4" width="280" />
         <div className="flex flex-col items-end ">
           <div className="flex items-center justify-center">
