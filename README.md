@@ -1,8 +1,7 @@
 # Blizzard Website
 
-<p align="center">
-  A Blizzard Website from BRChallangers. You can see the website by clicking [here](http://blizzard-site.vercel.app).
-</p>
+**A Blizzard Website from BRChallangers. You can see the website by clicking [here](http://blizzard-site.vercel.app).**
+
 
 
 ## Preview
