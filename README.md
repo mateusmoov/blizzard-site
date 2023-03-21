@@ -45,3 +45,7 @@ npm run dev
 ## What would I do differently
 
 - It was probably better to init the project with NextJS.
+
+## Conclusion
+
+In conclusion, creating the Blizzard Website was a challenging but rewarding experience. Through this project, I had the opportunity to improve my skills with ReactJS, TailwindCSS, React Query, Radix UI, and Zustand. I learned valuable lessons about web development best practices, and responsive design. 
